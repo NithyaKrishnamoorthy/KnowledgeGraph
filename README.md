@@ -23,8 +23,9 @@ The dataset includes 9000 movies, 600 users, 100,000 ratings and 3600 tags. Deta
 <tr><td>Links.csv</td><td>Links to Imdb, tmdb</td></tr>
 </table>
 
-<img src="movies_genre.png" />
-<img src="users_ratings.png" />
+
+![Movies by genre](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/movies_genre.png)
+![Users and ratings](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/user_rating.png)
 
 ### Methodology
 
@@ -61,4 +62,4 @@ Following this, the distribution of the test dataset is examined. About 44% of t
 The original dataset is examined for data sparsity. Out of the 610 users, the mean value of the number of movies rated per user is 165 and the value at the upper quartile (75%) is 168, while there are more than 9,000 movies in the system. 
 In the movies dataset, the upper quartile value for the number of reviews per movie is 9. This shows that there are much more movies than users in the system and may have attributed to the results of 0 hits.
 
-<img src="result.png" />
+![Results](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/result.png)
