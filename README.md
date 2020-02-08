@@ -10,7 +10,7 @@ The knowledge graph tools and resources can represent inter-connected relationsh
 This project aims to explore various paradigms of implementing recommendation system for movie recommendation and eventually build a mini application for such purpose.
 
 ### Data
-MovieLens dataset is obtained from https://grouplens.org/datasets/movielens/
+MovieLens dataset is obtained from https://grouplens.org/datasets/movielens/ <br>
 (F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. https://doi.org/10.1145/2827872)
 
 The dataset includes 9000 movies, 600 users, 100,000 ratings and 3600 tags. Details of files as per below table:
@@ -25,7 +25,7 @@ The dataset includes 9000 movies, 600 users, 100,000 ratings and 3600 tags. Deta
 
 
 ![Movies by genre](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/blob/master/movies_genre.PNG)
-![Users and ratings](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/user_rating.png)
+![Users and ratings](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/blob/master/user_ratings.PNG)
 
 ### Methodology
 
@@ -52,7 +52,7 @@ The dataset includes 9000 movies, 600 users, 100,000 ratings and 3600 tags. Deta
 The output of the models will be fed into a neo4j database using the py2Neo driver. The recommendation will be performed by querying the neo4j database using cypher queries.
 
 ### Evaluation
-Evaluation for content-based filtering:
+Evaluation for content-based filtering:<br>
 Top N results were considered for evaluation of the recommendation system.
 Firstly, test dataset was prepared by the leave-one-out portioning. From the original dataset, a random record was selected from each user to be treated as movie that the user has not watched yet, totaling 610 records. The remaining dataset forms the training dataset.
 The idea is, each user is given 5 recommendations by the recommender system. The recommendations are compared against the test dataset that was left out from the original dataset to examine for each user, if the left-out record is a part of the top 5 recommendations. If so, this would be considered as one hit. The presence of a hit means the recommendation is relevant to certain degree, as the user eventually watched the recommended movie later. 
@@ -62,4 +62,4 @@ Following this, the distribution of the test dataset is examined. About 44% of t
 The original dataset is examined for data sparsity. Out of the 610 users, the mean value of the number of movies rated per user is 165 and the value at the upper quartile (75%) is 168, while there are more than 9,000 movies in the system. 
 In the movies dataset, the upper quartile value for the number of reviews per movie is 9. This shows that there are much more movies than users in the system and may have attributed to the results of 0 hits.
 
-![Results](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/result.png)
+![Results](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/blob/master/Result.PNG)
