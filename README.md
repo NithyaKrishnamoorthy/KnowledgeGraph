@@ -24,7 +24,7 @@ The dataset includes 9000 movies, 600 users, 100,000 ratings and 3600 tags. Deta
 </table>
 
 
-![Movies by genre](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/movies_genre.png)
+![Movies by genre](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/blob/master/movies_genre.PNG)
 ![Users and ratings](https://github.com/NithyaKrishnamoorthy/KnowledgeGraph/user_rating.png)
 
 ### Methodology
