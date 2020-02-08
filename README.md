@@ -29,24 +29,11 @@ The dataset includes 9000 movies, 600 users, 100,000 ratings and 3600 tags. Deta
 
 ### Methodology
 
-<ul>
-<li>Content-based filtering</li>
-<li>Deep Learning</li>
-</ul>
-
 <b>Content-based filtering: </b> Pairwise similarity for all movies is determined by the following heuristics:
 <ol>
 	<li>Similarity based on movie genre</li> 
 	<li>Similarity based on viewership and ratings</li> 
 	<li>Similarity based on tag genome</li> 
-</ol>
-
-<b>Deep Learning:</b>
-
-<ol>
-	<li>Graph Embedding</li> 
-	<li>Randomwalk</li> 
-	<li>Node2Vec</li> 
 </ol>
 
 The output of the models will be fed into a neo4j database using the py2Neo driver. The recommendation will be performed by querying the neo4j database using cypher queries.
